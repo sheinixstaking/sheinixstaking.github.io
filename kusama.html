@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Sheinix Staking</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- awesome fontfamily -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+
+<body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="" /></div>
+    </div>
+    <!-- end loader -->
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="searvices.html">Staking</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <!-- header -->
+    <header id="myMenu">
+        <!-- header inner -->
+        <div class="head-top">
+            <div class="container-fluid">
+                <div class="row d_flex">
+                    <div class="col-sm-4">
+                        <div class="logo">
+                            <a href="index.html">Sheinix Staking</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <ul class="social_icon text_align_center d_none">
+                            <li> <a href="https://twitter.com/sheinix"><i class="fab fa-twitter"></i></a></li>
+                            <li> <a href="https://twitter.com/SheinixStaking"><i class="fab fa-twitter"></i></a></li>
+                            <li> <a href="https://discord.gg/n7yh4F5rFG"><i class="fab fa-discord"
+                                        aria-hidden="true"></i></a></li>
+                            <li> <a href="https://www.youtube.com/c/CryptoSheinix"><i class="fab fa-youtube"
+                                        aria-hidden="true"></i></a></li>
+                            <li> <a href="https://t.me/cardanpool"><i class="fab fa-telegram"></i></a></li>
+                            <li> <a href="https://t.me/cryptosheinixchat"><i class="fab fa-telegram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <ul class="email text_align_right">
+                            <!-- <li class="d_none"><a href="Javascript:void(0)"><i class="fa fa-user"
+                                        aria-hidden="true"></i></a></li>
+                            <li class="d_none"> <a href="Javascript:void(0)"><i class="fa fa-search"
+                                        style="cursor: pointer;" aria-hidden="true"></i></a> </li> -->
+                            <li>
+                                <button class="openbtn" onclick="openNav()"><img src="images/menu_btn.png"></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- graf -->
+    <div class="graf">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav nav-tabs md-tabs graf_tab" id="myTabMD" role="tablist">
+                        <li>
+                            <a class="nav-link active" id="home-tab-md" data-toggle="tab" href="#tab1" role="tab"
+                                aria-controls="home-md" aria-selected="true">Summary</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" id="home-tab-md" data-toggle="tab" href="#tab2" role="tab"
+                                aria-controls="home-md" aria-selected="true">How to Stake</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" id="profile-tab-md" data-toggle="tab" href="#tab3" role="tab"
+                                aria-controls="profile-md" aria-selected="false">Price</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" id="contact-tab-md" data-toggle="tab" href="#tab4" role="tab"
+                                aria-controls="contact-md" aria-selected="false">FAQ</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content card  graf_content" id="myTabContentMD">
+                        <div class="tab-pane fade show active padi" id="tab1" role="tabpanel"
+                            aria-labelledby="home-tab-md">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="usd text_align_center">
+                                        <h2>Summary </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="graf_bootom">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="growth text_align_center">
+                                            <p>
+                                                You can earn <strong>~5%</strong> annual by staking in Cardano. The
+                                                minimun to start staking is <strong>10 ADAs</strong>. When you start
+                                                staking in Cardano
+                                                <strong>2 ADAs</strong> will be taken from your wallet by the Cardano
+                                                Protocol as a deposit on the network. You will get back those 2
+                                                deposited ADA
+                                                once you deregister from staking. In Cardano your money <strong>is NOT
+                                                    sent to us</strong>, you will have access to your funds at any time
+                                                since they
+                                                will always be in your wallet. There is no locked time for withdrawals.
+                                                You will need to wait at least <strong>20 days</strong> to see your
+                                                first reward.
+                                                The more ADA you delegate to our pool the more rewards you will get when
+                                                we mint blocks. You can use <strong>Yoroi Wallet, Daedalus Wallet,
+                                                    CCWallet.io
+                                                </strong> to start staking with us.
+                                                <br>
+
+                                            </p>>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="usd text_align_center">
+                                        <h2>Node Info </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="graf_bootom">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="growth text_align_center">
+                                            <p>
+                                                <strong>Ticker:</strong> SHEIN
+                                                <br>
+                                                <strong>Name:</strong> CRYPTOSHEINIX
+                                                <br>
+                                                <strong>Pool id:</strong>
+                                                <br>pool1r9qyjstrc050njg8lm7wxy5874mgu322vyljntdsm5qgxvjcewv
+                                                (1940494163c3e8f9c907fefce31287f5768e454a613f29adb0dd0083)
+                                                <br>
+                                                <strong>Commission:</strong> 1%
+                                            </p>>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade padi" id="tab2" role="tabpanel" aria-labelledby="profile-tab-md">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="usd text_align_center">
+                                        <h2>How to Stake </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="graf_bootom">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="growth text_align_center ">
+                                            <h3 class="h3tota">Yoroi</h3>
+                                            <video class="embed-responsive" controls>
+                                                <source src="videos/demo.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="growth text_align_center">
+                                            <h3 class="h3tota">Daedalus</h3>
+                                            <video class="embed-responsive" controls>
+                                                <source src="videos/demo.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade padi" id="tab3" role="tabpanel" aria-labelledby="contact-tab-md">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="usd text_align_center">
+                                        <h2>Price </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="graf_bootom">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="growth text_align_center">
+                                            <center>
+                                                <div class="nomics-ticker-widget " data-name="Cardano" data-base="ADA"
+                                                    data-quote="USD"></div>
+                                            </center>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade padi" id="tab4" role="tabpanel" aria-labelledby="contact-tab-md">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="usd text_align_center">
+                                        <h2>FAQ </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="graf_bootom">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="growth text_align_center">
+                                            <div class="accordion" id="accordionExample">
+                                                <div class="card">
+                                                    <div class="card-header" id="headingOne">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseOne" aria-expanded="true"
+                                                                aria-controls="collapseOne">
+                                                                Collapsible Group Item #1
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+
+                                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                                        data-parent="#accordionExample">
+                                                        <div class="card-body">
+                                                            Some placeholder content for the first accordion panel. This
+                                                            panel is shown by default, thanks to the <code>.show</code>
+                                                            class.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingTwo">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left collapsed"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseTwo" aria-expanded="false"
+                                                                aria-controls="collapseTwo">
+                                                                Collapsible Group Item #2
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                                        data-parent="#accordionExample">
+                                                        <div class="card-body">
+                                                            Some placeholder content for the second accordion panel.
+                                                            This panel is hidden by default.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingThree">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left collapsed"
+                                                                type="button" data-toggle="collapse"
+                                                                data-target="#collapseThree" aria-expanded="false"
+                                                                aria-controls="collapseThree">
+                                                                Collapsible Group Item #3
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseThree" class="collapse"
+                                                        aria-labelledby="headingThree" data-parent="#accordionExample">
+                                                        <div class="card-body">
+                                                            And lastly, the placeholder content for the third and final
+                                                            accordion panel. This panel is hidden by default.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end graf -->
+
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a class="logo_bottom" href="index.html">Home</a>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class=" Informa conta ">
+                            <h3>Contact Us</h3>
+                            <ul>
+                                <li> <a href="mailto:sheinixstaking@gmail.com"> <i class=" fa fa-envelope "
+                                            aria-hidden=" true "></i> sheinixstaking@gmail.com
+                                    </a>
+                                </li>
+                                <li> <a href="https://discord.gg/exGb9kp4s7"> <i class=" fab fa-discord "
+                                            aria-hidden=" true "></i> Discord
+                                    </a>
+                                </li>
+                                <li> <a href="https://t.me/cardanpool"><i class=" fab fa-telegram "
+                                            aria-hidden=" true "></i>
+                                        SheinixStaking
+                                    </a> |
+                                    <a href="https://t.me/cryptosheinixchat">
+                                        Sheinix
+                                    </a>
+                                </li>
+                                <li> <a href="https://twitter.com/SheinixStaking"><i class=" fab fa-twitter "
+                                            aria-hidden=" true "></i>
+                                        SheinixStaking
+                                    </a> |
+                                    <a href="https://twitter.com/sheinix">
+                                        Sheinix
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class=" col-md-3 col-sm-6 ">
+                        <div class=" Informa helpful">
+                            <h3>Useful Link</h3>
+                            <ul>
+                                <li>Offical blockchain websites</li>
+                                <li><a href="https://cardano.org/"><i class=" fas fa-globe " aria-hidden=" true "></i>
+                                        Cardano Oficial
+                                    </a>
+                                </li>
+                                <li><a href="https://polkadot.network/"><i class=" fas fa-globe "
+                                            aria-hidden=" true "></i>
+                                        Polkadot Oficial
+                                    </a>
+                                </li>
+                                <li><a href="https://kusama.network/"><i class=" fas fa-globe "
+                                            aria-hidden=" true "></i>
+                                        Kusama Oficial
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+
+                        <div class=" Informa helpful">
+
+                            <h3>Staking Calculators</h3>
+                            <ul>
+                                <li><a href="https://www.stakingrewards.com/calculator/cardano/"><i
+                                            class=" fas fa-globe " aria-hidden=" true "></i>
+                                        Cardano Calc
+                                    </a>
+                                </li>
+                                <li><a href="https://www.stakingrewards.com/calculator/polkadot/"><i
+                                            class=" fas fa-globe " aria-hidden=" true "></i>
+                                        Polkadot Calc
+                                    </a>
+                                </li>
+                                <li><a href="https://www.stakingrewards.com/calculator/kusama/"><i
+                                            class=" fas fa-globe " aria-hidden=" true "></i>
+                                        Kusama Calc
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class=" col-md-3 col-sm-6 ">
+                        <div class=" Informa " name="youtubesubscription">
+                            <h3>Subscribe</h3>
+                            <li>Stay tuned with the
+                            </li>
+                            <li>latest crypto news
+                            </li>
+                            <br>
+                            <div class="g-ytsubscribe" data-channelid="UC423qnRwiJf4fLKAQ6Tlofg" data-layout="full"
+                                data-count="default"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" copyright text_align_center ">
+                    <div class=" container ">
+                        <div class=" row ">
+                            <div class=" col-md-12 ">
+                                <p>© <span id="year"></span> All Rights Reserved. Sheinix Staking</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js "></script>
+    <script src="js/bootstrap.bundle.min.js "></script>
+    <script src="js/jquery-3.0.0.min.js "></script>
+    <script src="js/custom.js "></script>
+
+    <!--To support youtube subcribe widget-->
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <script>
+        // insert current year on footer
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+
+        // fix style youtube subscribe button
+        document.getElementById("___ytsubscribe_0").removeAttribute("style");
+        document.getElementsByName("youtubesubscription")[0].getElementsByTagName("iframe")[0].removeAttribute("style");
+    </script>
+</body>
+
+</html>
