@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - [Babylon.js Viewer] Add glb to windows mixed reality home</title>
+  <link rel="stylesheet" href="css/glb.css">
+  <link rel="stylesheet" href="css/nftpage.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <!-- Bootstrap CSS  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <html>
+
+  <head>
+    <title>View 3D NFT</title>
+  </head>
+
+  <body>
+    <center>
+      <div class="headertext">
+        <div class="counter">
+          <span>Sale ends in</span><br>
+          <p class="time" id="shrimp_days"></p>&nbsp;
+          <p class="time"  id="shrimp_hours"></p>&nbsp;
+          <p class="time"  id="shrimp_mins"></p>&nbsp;
+          <p class="time"  id="shrimp_secs"></p>&nbsp;
+          <h2 class="time"  id="shrimp_end"></h2>
+        </div>
+        
+        <div id="addressdetail">
+        <figure>
+          <img style="height:200px; width:200px" class="img_responsive" src="files/wallets/shrimp.png" alt="#" />
+        </figure>
+
+        <div class="input-group mb-3">
+          <input id="address" type="text" readonly="readonly" class="form-control"
+            value="addr1foxkcdfjowiejflkwjefoiwjidjofisjoidfjsi">
+          <button data-toggle="tooltip" class="btn btn-outline-primary" type="button" id="copy"
+            data-clipboard-target="#address">Copy</button>
+        </div>
+        In order to buy this NFT send exactly 10 ADA to the Cardano Address Above.
+        If you want to buy more than one NFT, you must send individual transactions (separated purchases).
+        Remember that you cannot buy from an exchange, we recommend you to use any of the following Cardano
+        wallets: Daedalus, Yoroi, CCVault.io or Nami.
+      </div>
+        <br>
+        <br>
+
+        <babylon id="babylon-viewer" scene.clear-color.r="0" scene.clear-color.g="0" scene.clear-color.b="0" skybox="false" ground="false" model="files/shrimp/shrimp.glb" templates.nav-bar.params.fullscreen="false" templates.nav-bar.params.logo-text="View on Pool.pm" templates.nav-bar.params.logo-link="https://pool.pm/tokens" >
+        </babylon>
+
+        <table class="table table-bordered table-dark table-sm text-center">
+
+          <thead>
+            <tr>
+              <td colspan="2">
+
+              </td>
+            </tr>
+            <tr>
+              <th colspan="2">NFT Details</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Price</td>
+              <td>10 ADA</td>
+            </tr>
+            <tr>
+              <td>Cardano Specie</td>
+              <td>Shrimp</td>
+            </tr>
+            <tr>
+              <td>Scientific Name</td>
+              <td>Caridea</td>
+            </tr>
+            <tr>
+              <td>Average life</td>
+              <td>1-6 years</td>
+            </tr>
+            <tr>
+              <td>Size</td>
+              <td>2-35 mm</td>
+            </tr>
+            <tr>
+              <td>Estimated Holders Bag</td>
+              <td>25 - 100 ADA</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+      </div>
+
+      <!-- <babylon>
+        <model url="files/shrimp/shrimp.glb">
+          
+        </model>
+        <camera>
+          <behaviors>
+            <auto-rotate type="0"></auto-rotate>
+            <framing type="2" zoom-on-bounding-info="true" zoom-stops-animation="false"></framing>
+            <bouncing type="1"></bouncing>
+          </behaviors>
+        </camera>
+        <scene>
+          <clear-color r="0" g="0" , b="0"></clear-color>
+        </scene>
+      </babylon> -->
+
+      
+    </center>
+
+    <script  src="js/gallery.js"></script>
+    <script>
+      // The data/time we want to countdown to
+      var shrimpCountDownDate = new Date("Nov 17, 2021 22:32:00").getTime();
+  
+      // Run myfunc every second
+      var shrimpFunc = setInterval(function () {
+        updateTime("shrimp", shrimpCountDownDate);
+      }, 1000);
+    </script>
+
+    <script src="https://preview.babylonjs.com/viewer/babylon.viewer.js"></script>
+
+  </html>
+  <!-- partial -->
+  <script src="js/glb.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+  <script src="js/copy.js"></script>
+  
+
+  
+
+
+</body>
+
+</html>

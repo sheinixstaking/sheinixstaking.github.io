@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - movey backgrounds grid</title>
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <!-- Bootstrap CSS  -->
+  <link rel="stylesheet" href="css/gallery.css">
+
+<!--Clock font family-->
+<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<center>
+<div class="headertext">
+  <p></p>
+  CARDANO SPECIES NFTS <br>
+  Powered By Cryptosheinix</p>
+</div>
+
+<div class="headerdescription">
+  This is a collection inspired by the different marine species that exist in Cardano community according to the amount of ADA they have. 
+  The more ADA you have in your wallet means that you are one of the largest species. There is no official wallet classification but you can
+  find our classification here.
+</div>
+
+</center>
+<div class="maincontainer">
+
+<a href="seahorse.html">
+<div class="box">
+  <div class="image-wrap">
+    <div class="image image-0"></div>
+  </div>
+  <div class="border"></div>
+  <div class="text">
+    <span>Sale ends in</span><br>
+    <p class="time" id="seahorse_days"></p>&nbsp;
+    <p class="time"  id="seahorse_hours"></p>&nbsp;
+    <p class="time"  id="seahorse_mins"></p>&nbsp;
+    <p class="time"  id="seahorse_secs"></p>&nbsp;
+    <h2 class="time"  id="seahorse_end"></h2>
+  </div>
+</div>
+</a>
+
+<a href="shrimp.html">
+<div class="box">
+  <div class="image-wrap">
+    <div class="image image-1"></div>
+  </div>
+  <div class="border"></div>
+  <div class="text">
+    <span>Sale ends in</span><br>
+    <p class="time" id="shrimp_days"></p>&nbsp;
+    <p class="time"  id="shrimp_hours"></p>&nbsp;
+    <p class="time"  id="shrimp_mins"></p>&nbsp;
+    <p class="time"  id="shrimp_secs"></p>&nbsp;
+    <h2 class="time"  id="shrimp_end"></h2>
+  </div>
+</div>
+</a>
+
+<a href="#">
+<div class="box">
+  <div class="image-wrap">
+    <div class="image image-2"></div>
+  </div>
+  <div class="border"></div>
+  <div class="text">
+    <span>Shell</span>
+  </div>
+</div>
+</a>
+
+<a href="#">
+<div class="box">
+  <div class="image-wrap">
+    <div class="image image-3"></div>
+  </div>
+  <div class="border"></div>
+  <div class="text">
+    <span>Starfish</span>
+  </div>
+</div>
+</a>
+
+<a href="#">
+<div class="box">
+  <div class="image-wrap">
+    <div class="image image-4"></div>
+  </div>
+  <div class="border"></div>
+  <div class="text">
+    <span>Crab</span>
+  </div>
+</div>
+</a>
+
+<a href="#">
+<div class="box">
+  <div class="image-wrap">
+    <div class="image image-5"></div>
+  </div>
+  <div class="border"></div>
+  <div class="text">
+    <span>Fish</span>
+  </div>
+</div>
+</a>
+
+<a href="#">
+<div class="box">
+  <div class="image-wrap">
+    <div class="image image-6"></div>
+  </div>
+  <div class="border"></div>
+  <div class="text">
+    <span>Piranha</span>
+  </div>
+</div>
+</a>
+
+<a href="#">
+<div class="box">
+  <div class="image-wrap">
+    <div class="image image-7"></div>
+  </div>
+  <div class="border"></div>
+  <div class="text">
+    <span>Octopus</span>
+  </div>
+</div>
+</a>
+
+
+<a href="#">
+<div class="box">
+  <div class="image-wrap">
+    <div class="image image-8"></div>
+  </div>
+  <div class="border"></div>
+  <div class="text">
+    <span>Shark</span>
+  </div>
+</div>
+</a>
+
+<a href="#">
+<div class="box">
+  <div class="image-wrap">
+    <div class="image image-9"></div>
+  </div>
+  <div class="border"></div>
+  <div class="text">
+    <span>Whale</span>
+  </div>
+</div>
+</a>
+
+  <!--Scripts-->
+  <script  src="js/gallery.js"></script>
+
+
+  <script>
+    // The data/time we want to countdown to
+    var shrimpCountDownDate = new Date("Nov 18, 2021 16:37:52").getTime();
+    var seahorseCountDownDate = new Date("Nov 30, 2021 16:37:52").getTime();
+
+    // Run myfunc every second
+    var shrimpFunc = setInterval(function () {
+      updateTime("shrimp", shrimpCountDownDate);
+      updateTime("seahorse", seahorseCountDownDate);
+    }, 1000);
+    </script>
+</div>
+</body>
+</html>
