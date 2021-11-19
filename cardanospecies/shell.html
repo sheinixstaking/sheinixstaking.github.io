@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cardano Species NFTs</title>
+  <link rel="stylesheet" href="css/glb.css">
+  <link rel="stylesheet" href="css/nftpage.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <!-- Bootstrap CSS  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <html>
+
+  <head>
+    <title>3D View NFT</title>
+  </head>
+
+  <body>
+    <center>
+      <div class="headertext">
+        <div class="counter">
+          <span>Sale ends in</span><br>
+          <p class="time" id="shrimp_days"></p>&nbsp;
+          <p class="time"  id="shrimp_hours"></p>&nbsp;
+          <p class="time"  id="shrimp_mins"></p>&nbsp;
+          <p class="time"  id="shrimp_secs"></p>&nbsp;
+          <h2 class="time"  id="shrimp_end"></h2>
+        </div>
+        
+        <div id="addressdetail">
+        <figure>
+          <img style="height:200px; width:200px" class="img_responsive" src="files/wallets/shell.png" alt="#" />
+        </figure>
+
+        <div class="input-group mb-3">
+          <input id="address" type="text" readonly="readonly" class="form-control"
+            value="addr1q94952spqxjfrzdmm32x2k2q7npz64pmmk8kq56dym2zapcyx7a0swut6v2h3h8w07snsvx035y3zs5t4vvf27xqxefsmsm8h0">
+          <button data-toggle="tooltip" class="btn btn-outline-primary" type="button" id="copy"
+            data-clipboard-target="#address">Copy</button>
+        </div>
+        In order to buy this NFT send exactly 15 ADA to the Cardano Address Above.
+        If you want to buy more than one NFT, you must send individual transactions (separated purchases).
+        Remember that you cannot buy from an exchange, we recommend you to use any of the following Cardano
+        wallets: Daedalus, Yoroi, CCVault.io or Nami. You will receive your NFT in 5-10 mins along with 1.5 ADA. 
+      </div>
+        <br>
+        <br>
+
+        <babylon id="babylon-viewer" scene.clear-color.r="0" scene.clear-color.g="0" scene.clear-color.b="0" skybox="false" ground="false" model="files/shell/shell.glb" templates.nav-bar.params.fullscreen="false" templates.nav-bar.params.logo-text="pool.pm" templates.nav-bar.params.logo-link="https://pool.pm/58013bee5ad1ecde39fec6b7b0a79e95980662eea4b0eff52d89738e.shell00001" >
+        </babylon>
+
+        <table class="table table-bordered table-dark table-sm text-center">
+
+          <thead>
+            <tr>
+              <td colspan="2">
+
+              </td>
+            </tr>
+            <tr>
+              <th colspan="2">NFT Details</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Price</td>
+              <td>15 ADA</td>
+            </tr>
+            <tr>
+              <td>Cardano Specie</td>
+              <td>Shell</td>
+            </tr>
+            <tr>
+              <td>Scientific Name</td>
+              <td>Scallop</td>
+            </tr>
+            <tr>
+              <td>Average Size</td>
+              <td>3-22 cm</td>
+            </tr>
+            <tr>
+              <td>Average Life</td>
+              <td>1-20 years</td>
+            </tr>
+            <tr>
+              <td>ADA Holders Bag Size</td>
+              <td>100-1000 ADA</td>
+            </tr>
+            <tr>
+              <td>Habitat</td>
+              <td>Saltwater</td>
+            </tr>
+            <tr>
+              <td>Curious fact</td>
+              <td>Each ring on a scallop’s shell represents a year of growth</td>
+            </tr>
+            <tr>
+              <td>Authors</td>
+              <td>CRYPTOSHEINIX / SHEINIX STAKING</td>
+            </tr>
+            <tr>
+              <td>Authors Twitter</td>
+              <td>@sheinix / @sheinixstaking</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+      </div>
+
+    </center>
+
+    <script  src="js/gallery.js"></script>
+    <script>
+      // The data/time we want to countdown to
+      var countDownDate = new Date("Dec 30, 2021 23:59:59");
+  
+      // Run myfunc every second
+      var myFunc = setInterval(function () {
+        updateTime("shrimp", countDownDate);
+      }, 1000);
+    </script>
+
+    <script src="https://preview.babylonjs.com/viewer/babylon.viewer.js"></script>
+
+  </html>
+  <!-- partial -->
+  <script src="js/glb.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+  <script src="js/copy.js"></script>
+  
+
+  
+
+
+</body>
+
+</html>
