@@ -117,7 +117,15 @@
       </div>
 
     </center>
-
+    <script>
+      var audio = document.createElement("AUDIO")
+      document.body.appendChild(audio);
+      audio.src = "files/music.mp3"
+  
+      document.body.addEventListener("mousemove", function () {
+          audio.play()
+      })
+    </script>
     <script  src="js/gallery.js"></script>
     <script>
       // The data/time we want to countdown to
