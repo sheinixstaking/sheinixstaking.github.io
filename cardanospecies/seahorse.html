@@ -12,10 +12,6 @@
 </head>
 
 <body>
-  <audio controls loop autoplay hidden>
-    <source src="files/music.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
   <!-- partial:index.partial.html -->
   <html>
 
@@ -123,7 +119,7 @@
       audio.src = "files/music.mp3"
   
       document.body.addEventListener("mousemove", function () {
-          audio.play()
+          audio.play();
       })
     </script>
     <script  src="js/gallery.js"></script>
