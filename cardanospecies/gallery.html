@@ -247,7 +247,7 @@
     var audio = document.createElement("AUDIO")
     document.body.appendChild(audio);
     audio.src = "files/music.mp3";
-    audio.stop();
+    audio.loop=true;
 
     document.body.addEventListener("mousemove", function () {
         audio.play()
