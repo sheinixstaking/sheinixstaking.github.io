@@ -157,14 +157,19 @@
 </div>
 </a>
 
-<a href="#">
+<a href="starfish">
 <div class="box">
   <div class="image-wrap">
     <div class="image image-3"></div>
   </div>
   <div class="border"></div>
   <div class="text">
-    <span>Starfish</span>
+    <span>Sale ends in</span><br>
+    <p class="time" id="starfish_days"></p>&nbsp;
+    <p class="time"  id="starfish_hours"></p>&nbsp;
+    <p class="time"  id="starfish_mins"></p>&nbsp;
+    <p class="time"  id="starfish_secs"></p>&nbsp;
+    <h2 class="time"  id="starfish_end"></h2>
   </div>
 </div>
 </a>
@@ -261,12 +266,14 @@
     var shrimpCountDownDate = new Date("Dec 30, 2021 23:59:59");
     var seahorseCountDownDate = new Date("Dec 30, 2021 23:59:59");
     var shellCountDownDate = new Date("Dec 30, 2021 23:59:59");
+    var starfishCountDownDate = new Date("Jan 01, 2022 23:59:59");
 
     // Run myfunc every second
     var shrimpFunc = setInterval(function () {
       updateTime("shrimp", shrimpCountDownDate);
       updateTime("seahorse", seahorseCountDownDate);
       updateTime("shell", shellCountDownDate);
+      updateTime("starfish", starfishCountDownDate);
     }, 1000);
     </script>
 </div>
