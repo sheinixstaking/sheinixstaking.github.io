@@ -27,7 +27,7 @@ a { color: inherit; }
 .headertext p {
   font-size: 15px !important;
 }
-.headertext span {
+#headertextspan {
   font-size: 40px !important;
 }
 
