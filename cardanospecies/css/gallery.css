@@ -143,37 +143,37 @@ a { color: inherit; }
 }
 /* image backgrounds */
 .image-0 {
-  background: url(../files/seahorse/seahorse.gif);
+  background: url(../files/seahorse/minseahorse.gif);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .image-1 {
-  background: url(../files/shrimp/shrimp.gif);
+  background: url(../files/shrimp/minshrimp.gif);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .image-2 {
-  background: url(../files/shell/shell.gif);
+  background: url(../files/shell/minshell.gif);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .image-3 {
-  background: url(../files/starfish/starfish.gif);
+  background: url(../files/starfish/minstarfish.gif);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .image-4 {
-  background: url(../files/crab/crab.gif);
+  background: url(../files/crab/mincrab.gif);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .image-5 {
-  background: url(../files/question-mark.gif);
+  background: url(../files/fish/minfish.gif);
   background-repeat: no-repeat;
   background-size: cover;
 }

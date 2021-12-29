@@ -98,7 +98,7 @@
 <div class="headerdescription">
   This is a 3D Cardano NFT Collection inspired by the different marine species that exist in Cardano community according to the amount of ADA they hold. 
   The more ADA you hold in your wallet means that you are one of the largest species. There is no official wallet classification but you can
-  find our classification <a href="#" id="myBtn">here</a>. Each NFT will be on sale for 40 days exactly, the price will keep constant during those 40 days for each NFT.
+  find our classification <a href="#" id="myBtn">here</a>. Each NFT will be on sale for fixed number of days, the price will keep constant during those days for each NFT.
   However, smaller species will have cheaper prices than bigger ones. 
 </div>
 
@@ -191,14 +191,19 @@
 </div>
 </a>
 
-<a href="#">
+<a href="fish">
 <div class="box">
   <div class="image-wrap">
     <div class="image image-5"></div>
   </div>
   <div class="border"></div>
   <div class="text">
-    <span>Fish</span>
+    <span>Sale ends in</span><br>
+    <p class="time" id="fish_days"></p>&nbsp;
+    <p class="time"  id="fish_hours"></p>&nbsp;
+    <p class="time"  id="fish_mins"></p>&nbsp;
+    <p class="time"  id="fish_secs"></p>&nbsp;
+    <h2 class="time"  id="fish_end"></h2>
   </div>
 </div>
 </a>
@@ -273,6 +278,7 @@
     var shellCountDownDate = new Date("Jan 31, 2022 23:59:599");
     var starfishCountDownDate = new Date("Jan 31, 2022 23:59:59");
     var crabCountDownDate = new Date("Jan 31, 2022 23:59:59");
+    var fishCountDownDate = new Date("Jan 31, 2022 23:59:59");
 
     // Run myfunc every second
     var shrimpFunc = setInterval(function () {
@@ -281,6 +287,7 @@
       updateTime("shell", shellCountDownDate);
       updateTime("starfish", starfishCountDownDate);
       updateTime("crab", crabCountDownDate);
+      updateTime("fish", fishCountDownDate);
     }, 1000);
     </script>
 </div>
