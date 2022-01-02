@@ -208,51 +208,71 @@
 </div>
 </a>
 
-<a href="#">
+<a href="piranha">
 <div class="box">
   <div class="image-wrap">
     <div class="image image-6"></div>
   </div>
   <div class="border"></div>
   <div class="text">
-    <span>Piranha</span>
+    <span>Sale ends in</span><br>
+    <p class="time" id="piranha_days"></p>&nbsp;
+    <p class="time"  id="piranha_hours"></p>&nbsp;
+    <p class="time"  id="piranha_mins"></p>&nbsp;
+    <p class="time"  id="piranha_secs"></p>&nbsp;
+    <h2 class="time"  id="piranha_end"></h2>
   </div>
 </div>
 </a>
 
-<a href="#">
+<a href="octopus">
 <div class="box">
   <div class="image-wrap">
     <div class="image image-7"></div>
   </div>
   <div class="border"></div>
   <div class="text">
-    <span>Octopus</span>
+    <span>Sale ends in</span><br>
+    <p class="time" id="octopus_days"></p>&nbsp;
+    <p class="time"  id="octopus_hours"></p>&nbsp;
+    <p class="time"  id="octopus_mins"></p>&nbsp;
+    <p class="time"  id="octopus_secs"></p>&nbsp;
+    <h2 class="time"  id="octopus_end"></h2>
   </div>
 </div>
 </a>
 
 
-<a href="#">
+<a href="shark">
 <div class="box">
   <div class="image-wrap">
     <div class="image image-8"></div>
   </div>
   <div class="border"></div>
   <div class="text">
-    <span>Shark</span>
+    <span>Sale ends in</span><br>
+    <p class="time" id="shark_days"></p>&nbsp;
+    <p class="time"  id="shark_hours"></p>&nbsp;
+    <p class="time"  id="shark_mins"></p>&nbsp;
+    <p class="time"  id="shark_secs"></p>&nbsp;
+    <h2 class="time"  id="shark_end"></h2>
   </div>
 </div>
 </a>
 
-<a href="#">
+<a href="whale">
 <div class="box">
   <div class="image-wrap">
     <div class="image image-9"></div>
   </div>
   <div class="border"></div>
   <div class="text">
-    <span>Whale</span>
+    <span>Sale ends in</span><br>
+    <p class="time" id="whale_days"></p>&nbsp;
+    <p class="time"  id="whale_hours"></p>&nbsp;
+    <p class="time"  id="whale_mins"></p>&nbsp;
+    <p class="time"  id="whale_secs"></p>&nbsp;
+    <h2 class="time"  id="whale_end"></h2>
   </div>
 </div>
 </a>
@@ -278,7 +298,11 @@
     var shellCountDownDate = new Date("Jan 31, 2022 23:59:599");
     var starfishCountDownDate = new Date("Jan 31, 2022 23:59:59");
     var crabCountDownDate = new Date("Jan 31, 2022 23:59:59");
-    var fishCountDownDate = new Date("Jan 31, 2022 23:59:59");
+    var fishCountDownDate = new Date("Feb 10, 2022 23:59:59");
+    var piranhaCountDownDate = new Date("Feb 10, 2022 23:59:59");
+    var octopusCountDownDate = new Date("Feb 10, 2022 23:59:59");
+    var sharkCountDownDate = new Date("Feb 10, 2022 23:59:59");
+    var whaleCountDownDate = new Date("Feb 10, 2022 23:59:59");
 
     // Run myfunc every second
     var shrimpFunc = setInterval(function () {
@@ -288,6 +312,10 @@
       updateTime("starfish", starfishCountDownDate);
       updateTime("crab", crabCountDownDate);
       updateTime("fish", fishCountDownDate);
+      updateTime("piranha", piranhaCountDownDate);
+      updateTime("octopus", octopusCountDownDate);
+      updateTime("shark", sharkCountDownDate);
+      updateTime("whale", whaleCountDownDate);
     }, 1000);
     </script>
 </div>
